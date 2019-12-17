@@ -15,7 +15,7 @@ def isLeap(y):
     return False
 
 def fetchInputData():
-    imonth, iday, iyear = tuple(map(int, input("MM DD YYYY :: ").split()))
+    imonth, iday, iyear = tuple(map(int, input("Enter date in MM DD YYYY :: ").split()))
     return imonth, iday, iyear
 
 def judgeInput(imonth, iday, iyear):
@@ -62,6 +62,7 @@ def daysStartingfromSpecify(imonth, iday, iyear, start):
     return totalDays
 
 if __name__ == '__main__':
+    print("Hello user! This program counts how many days have elapsed since the beginning of the decade, century, or millenia!")
     while True:
         M, D, Y = fetchInputData()
         if judgeInput(M, D, Y):
